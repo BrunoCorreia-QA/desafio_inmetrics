@@ -3,7 +3,7 @@ Dado('que acesso a tela de cadastro') do
 end
 
 Então('preencho com os dados necessarios') do
-  @cadastro.input_cadastro[0].send_keys "Viviane Araujo"
+  @cadastro.input_cadastro[0].send_keys "Didi Mocó"
   @cadastro.input_cadastro[1].send_keys "Teste123"
   @cadastro.input_cadastro[2].send_keys "Teste123"
   click_button "Cadastrar"
@@ -14,11 +14,11 @@ Quando('clico em {string}') do |string|
 end
 
 Então('preencho com as informações de cadastro') do
-  @cadstro.cadastrar_funcionário
+  @cadastro.cadastrar_funcionario
 end
 
 Quando('pesquiso por um funcionário') do
-  find(:xpath, '//*[@id="tabela_filter"]/label/input').send_keys "Bobby Marvin Mante"
+  find(:xpath, '//*[@id="tabela_filter"]/label/input').send_keys "Drusilla Reinger Tromp"
 end
 
 Quando('clico em editar') do

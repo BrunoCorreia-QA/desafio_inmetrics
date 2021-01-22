@@ -4,6 +4,7 @@
 class CadastroScreen < SitePrism::Page
   include Helpers
   include BaseScreen
+  include CadastroModule
 
   elements :button_cadastro, '.nav-link.text-uppercase.font-weight-bold'
   elements :input_cadastro, '.input100'
