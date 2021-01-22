@@ -11,8 +11,7 @@ require 'selenium-webdriver'
 require 'webdrivers'
 require_relative File.expand_path('../support/helpers.rb', __dir__)
 require_relative File.expand_path('../common/base_screen.rb', __dir__)
-
-require 'faker'
+require_relative File.expand_path('../common/modules/cadastro_module.rb', __dir__)
 
 #Isso é para não ter que declarar o helpers e nem o baseScreen
 World Capybara::DSL
